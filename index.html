@@ -170,9 +170,9 @@
 
   /* Final CTA */
   .cta{background:linear-gradient(120deg,var(--blue) 0%, var(--teal) 60%, var(--green) 130%); border-radius:18px;
-    padding:38px 36px; color:#fff; display:grid; grid-template-columns:1.3fr .9fr; gap:30px; align-items:center}
-  .cta h2{color:#fff; font-size:28px; max-width:14em}
-  .cta p{color:#e7f4f6; font-size:15.5px; margin:10px 0 18px; max-width:30em}
+    padding:26px 28px; color:#fff; display:grid; grid-template-columns:1.2fr .95fr; gap:24px; align-items:center}
+  .cta h2{color:#fff; font-size:24px; max-width:14em}
+  .cta p{color:#e7f4f6; font-size:14.5px; margin:8px 0 18px; max-width:30em}
   .cta .btn-primary{background:#fff; color:var(--blue-deep)}
   .cta .btn-primary:hover{background:#eef6ff}
   .repcard{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.25); border-radius:14px; padding:20px 22px}
@@ -207,6 +207,24 @@
     .program{grid-template-columns:1fr}
     .pstep{border-top:1px solid #dbe7ee} .pstep:first-child{border-top:0}
   }
+  /* Contact card + compact HubSpot form */
+  .contactcard{background:#fff; border-radius:14px; padding:16px 18px; max-width:400px; margin-left:auto; box-shadow:0 12px 32px rgba(8,30,55,.20)}
+  .contactcard .cline{display:flex; align-items:center; gap:9px; color:var(--blue); font-weight:700; font-size:14px; margin-bottom:6px}
+  .contactcard .cline:hover{color:var(--blue-deep)}
+  .contactcard .hs-form-frame{margin-top:10px}
+  .hs-form-frame{font-size:14px; line-height:1.4}
+  .hs-form-frame .hsfc-RichText, .hs-form-frame .hs-richtext{display:none !important}
+  .hs-form-frame form, .hs-form-frame .hsfc-Step__Content{gap:0 !important}
+  .hs-form-frame .hsfc-Field, .hs-form-frame .hs-form-field{margin-bottom:8px !important; padding:0 !important}
+  .hs-form-frame .hsfc-FieldLabel, .hs-form-frame .hs-form-field > label{font-size:12px !important; font-weight:600 !important; margin-bottom:3px !important}
+  .hs-form-frame .hsfc-TextInput, .hs-form-frame .hsfc-DropdownInput, .hs-form-frame .hs-input{min-height:36px !important; padding:7px 10px !important; font-size:13.5px !important}
+  .hs-form-frame textarea.hs-input{min-height:64px !important}
+  .hs-form-frame .hsfc-Button, .hs-form-frame .hs-button{min-height:40px !important; padding:10px 18px !important; font-size:14px !important}
+  .hs-form-frame .hsfc-NavigationRow, .hs-form-frame .hs_submit{margin-top:10px !important}
+  section.band#book{padding:34px 0}
+  .model .modeldoc{display:inline-flex; align-items:center; gap:7px; margin-top:10px; align-self:flex-start;
+    font-family:"Poppins"; font-weight:600; font-size:13px; color:var(--blue)}
+  .model .modeldoc:hover{color:var(--blue-deep)}
 </style>
 </head>
 <body>
@@ -220,10 +238,9 @@
     </div>
     <div class="mast-spacer"></div>
     <div class="mast-contact">
-      <b>Jessica Subirats</b> · Regional VP of Sales<br>
-      jessica.subirats@geneidlab.com · 713-208-1986
+      <b>GeneID Advanced Molecular Diagnostics</b><br>
+      info@geneidlab.com · (201) 771-3347
     </div>
-    <a class="btn btn-primary" href="https://meetings.hubspot.com/jessica-subirats-geneid/intro" target="_blank" rel="noopener">Book an intro call</a>
   </div>
 </header>
 
@@ -238,7 +255,7 @@
     <a href="#xenome">Xenome (WES)</a>
     <a href="#tools">Practice tools</a>
     <a href="#partner">Partner with us</a>
-    <a href="#book">Book a call</a>
+    <a href="#book">Contact</a>
   </div>
 </nav>
 
@@ -251,7 +268,6 @@
       <h1>One place for every GeneID test, report, and <em>resource</em> your practice needs.</h1>
       <p class="lede">A CLIA-certified, CAP-accredited lab (est. 2012, Montvale, NJ) spanning hereditary cancer, carrier screening, pharmacogenomics, prenatal, and whole exome sequencing — with a fully supported program that handles eligibility, consent, insurance, and counseling for you.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="https://meetings.hubspot.com/jessica-subirats-geneid/intro" target="_blank" rel="noopener">Book a 20-minute intro call</a>
         <a class="btn btn-ghost" href="https://www.dropbox.com/scl/fi/j8nj8lx92k11q90rzyylz/GeneID-Provider-Overview.pdf?rlkey=i41zim9uif4goiimh6vyg4c53&st=4frxmjny&dl=1" target="_blank" rel="noopener">Provider overview (PDF)</a>
       </div>
       <div class="badges">
@@ -416,6 +432,7 @@
       </ul>
       <div class="best"><b>Best for:</b> practices that want continuity of care, fully supported by GeneID.</div>
       <a class="enroll" href="https://na4.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=dc8e0d77-c199-401f-961d-9a4ea945e65e&amp;env=na4&amp;acct=8f6b44c4-c577-4f8a-8d67-e8ea5ea2f5ab&amp;v=2" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 20h16M5 16l9.5-9.5a2 2 0 0 1 2.8 0l.2.2a2 2 0 0 1 0 2.8L8 19l-4 1 1-4z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/></svg>Start a referral (DocuSign)</a>
+      <a class="modeldoc" href="https://www.dropbox.com/scl/fi/3gvqjivi4ci0tptnldzs1/GeneID-Provider-Referral-Guide.pdf?rlkey=imdul8dwpodkj3o0ozh58fh2t&amp;st=ls6lwgp5&amp;dl=1" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 3h9l5 5v13H6z" stroke="currentColor" stroke-width="1.7"/><path d="M15 3v5h5M9 13h7M9 16.5h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Referral cheat sheet (PDF)</a>
     </div>
     <div class="model m2">
       <div class="kicker">Full service</div>
@@ -462,14 +479,12 @@
   <div class="cta">
     <div>
       <h2>Let's bring genetic testing into your practice.</h2>
-      <p>Book a 20-minute intro call and we'll map the right model for your workflow — fully supported by GeneID, with no setup on your end.</p>
-      <a class="btn btn-primary" href="https://meetings.hubspot.com/jessica-subirats-geneid/intro" target="_blank" rel="noopener">Book an intro call</a>
+      <p>Send us a message and we'll map the right model for your practice, fully supported by GeneID with no setup on your end.</p>
     </div>
-    <div class="repcard">
-      <div class="who">Jessica Subirats</div>
-      <div class="role">Regional VP of Sales</div>
-      <a class="ln" href="mailto:jessica.subirats@geneidlab.com"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#fff" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="#fff" stroke-width="1.6"/></svg> jessica.subirats@geneidlab.com</a>
-      <a class="ln" href="tel:7132081986"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L16 13l5 2v3a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg> 713-208-1986</a>
+    <div class="contactcard">
+      <a class="cline" href="mailto:info@geneidlab.com"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#15508C" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="#15508C" stroke-width="1.6"/></svg> info@geneidlab.com</a>
+      <a class="cline" href="tel:2017713347"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L16 13l5 2v3a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="#15508C" stroke-width="1.6" stroke-linejoin="round"/></svg> (201) 771-3347</a>
+      <div class="hs-form-frame" data-region="na1" data-form-id="49c978e4-52d3-4489-89b3-37051614ecad" data-portal-id="22152531"></div>
     </div>
   </div>
 </section>
@@ -496,6 +511,7 @@
   </div>
 </footer>
 
+<script src="https://js.hsforms.net/forms/embed/22152531.js" defer></script>
 <script>
   (function(){
     var links = Array.prototype.slice.call(document.querySelectorAll('#secnav a'));
