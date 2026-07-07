@@ -222,6 +222,16 @@
   .hs-form-frame .hsfc-Button, .hs-form-frame .hs-button{min-height:40px !important; padding:10px 18px !important; font-size:14px !important}
   .hs-form-frame .hsfc-NavigationRow, .hs-form-frame .hs_submit{margin-top:10px !important}
   section.band#book{padding:34px 0}
+  /* ---- Provider video embeds ---- */
+  .introvideo{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;max-width:900px;margin:0 auto}
+  .vframe{position:relative;padding-top:56.25%;background:#0b1622}
+  .vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .testvideos{margin-top:6px}
+  .tvgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+  .tvcard{border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:12px;overflow:hidden;background:var(--paper)}
+  .tvcard .tvhead{display:flex;align-items:center;gap:8px;padding:11px 14px;background:#f0f4f8;background:color-mix(in srgb,var(--accent) 8%,#fff)}
+  .tvcard .tvhead .vdot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+  .tvcard .tvhead b{font-family:"Poppins";font-weight:600;font-size:13.5px;color:var(--ink);line-height:1.25}
 </style>
 </head>
 <body>
@@ -306,6 +316,18 @@
 </section>
 </div>
 
+<!-- INTRO VIDEO: three ways to partner -->
+<div class="wrap">
+<section class="band" style="padding-top:8px" id="intro-video">
+  <div class="sec-eyebrow">Watch first</div>
+  <h2 class="sec-title">Three tailored ways to partner with GeneID</h2>
+  <p class="sec-sub">A quick overview of how your practice can work with us — then explore the full test library and resources below.</p>
+  <div class="introvideo" style="margin-top:20px">
+    <div class="vframe"><iframe src="https://player.vimeo.com/video/1207441573?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Discover Three Tailored Ways to Partner with GeneID"></iframe></div>
+  </div>
+</section>
+</div>
+
 <!-- TEST LIBRARY -->
 <div class="wrap">
 <section class="band" style="padding-top:6px" id="tests">
@@ -326,6 +348,11 @@
       <a class="res" href="https://www.dropbox.com/scl/fi/0m001yi0doymabfm5rvsl/Cancer-gene-panel.pdf?rlkey=1sm3zgnr3zb7runkjjrk6ydwr&st=2fzjxrj7&dl=1" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 34 42" fill="none"><path d="M5 1h17l8 8v31a1 1 0 01-1 1H5a1 1 0 01-1-1V2a1 1 0 011-1z" fill="#fff" stroke="#c9d8e2" stroke-width="1.4"/><path d="M22 1v8h8" stroke="#c9d8e2" stroke-width="1.4"/><path d="M9 19h16M9 24h16M9 29h10" stroke="#c2cfd9" stroke-width="1.6" stroke-linecap="round"/></svg><span class="ft">PDF</span></span><span class="meta"><b>Gene panel</b><span>PDF · <em>Open</em></span></span></a>
       <a class="res" href="https://www.dropbox.com/scl/fi/go8mor780kafjkeiwcrrn/Cancer-Risk-Sample-Report.pdf?rlkey=xbo0mt2gytupwf2ssez60gora&st=jt9k9ql0&dl=1" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 34 42" fill="none"><path d="M5 1h17l8 8v31a1 1 0 01-1 1H5a1 1 0 01-1-1V2a1 1 0 011-1z" fill="#fff" stroke="#c9d8e2" stroke-width="1.4"/><path d="M22 1v8h8" stroke="#c9d8e2" stroke-width="1.4"/><path d="M9 19h16M9 24h16M9 29h10" stroke="#c2cfd9" stroke-width="1.6" stroke-linecap="round"/></svg><span class="ft">PDF</span></span><span class="meta"><b>Sample report</b><span>PDF · <em>Open</em></span></span></a>
     </div>
+  
+    <div class="reslabel">Provider video</div>
+    <div class="testvideos" style="max-width:660px"><div class="tvgrid">
+      <div class="tvcard"><div class="tvhead"><span class="vdot"></span><b>Understanding a Positive PrevenTest Report</b></div><div class="vframe"><iframe src="https://player.vimeo.com/video/1207441042?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Understanding a Positive PrevenTest Report: A Guide for Clinicians"></iframe></div></div>
+    </div></div>
   </article>
 
   <!-- Carrier -->
@@ -354,6 +381,11 @@
       <a class="res" href="https://www.dropbox.com/scl/fi/zbwhlul1lg90d0n4h7eci/PGx-Result-Medications-updated-4.23.2024.pdf?rlkey=ks6600vj8jyiqytxg7wrx88r8&st=jko3on90&dl=1" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 34 42" fill="none"><path d="M5 1h17l8 8v31a1 1 0 01-1 1H5a1 1 0 01-1-1V2a1 1 0 011-1z" fill="#fff" stroke="#c9d8e2" stroke-width="1.4"/><path d="M22 1v8h8" stroke="#c9d8e2" stroke-width="1.4"/><path d="M9 19h16M9 24h16M9 29h10" stroke="#c2cfd9" stroke-width="1.6" stroke-linecap="round"/></svg><span class="ft">PDF</span></span><span class="meta"><b>Medication list</b><span>PDF · <em>Open</em></span></span></a>
       <a class="res" href="https://www.dropbox.com/scl/fi/th88slzkagaburozw0yqs/PGx-Comprehesive-Panel-Results-1.pdf?rlkey=gu0rpmg4vm0q0tmmdda7df0td&st=4r1by80k&dl=1" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 34 42" fill="none"><path d="M5 1h17l8 8v31a1 1 0 01-1 1H5a1 1 0 01-1-1V2a1 1 0 011-1z" fill="#fff" stroke="#c9d8e2" stroke-width="1.4"/><path d="M22 1v8h8" stroke="#c9d8e2" stroke-width="1.4"/><path d="M9 19h16M9 24h16M9 29h10" stroke="#c2cfd9" stroke-width="1.6" stroke-linecap="round"/></svg><span class="ft">PDF</span></span><span class="meta"><b>Comprehensive sample report</b><span>PDF · <em>Open</em></span></span></a>
     </div>
+  
+    <div class="reslabel">Provider video</div>
+    <div class="testvideos" style="max-width:660px"><div class="tvgrid">
+      <div class="tvcard"><div class="tvhead"><span class="vdot"></span><b>Mastering the PGx Report</b></div><div class="vframe"><iframe src="https://player.vimeo.com/video/1207441262?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Mastering the PGx Report: A Clinician's Guide"></iframe></div></div>
+    </div></div>
   </article>
 
   <!-- NIPT -->
@@ -380,6 +412,13 @@
       <a class="res" href="https://www.dropbox.com/scl/fi/0yvlejmtpgnn8c7oco879/Xenome-ABA-Referral-Partner-Onepager.pdf?rlkey=pp2nngurrzywzh29yanfeh3ci&st=slo0kq89&dl=1" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 34 42" fill="none"><path d="M5 1h17l8 8v31a1 1 0 01-1 1H5a1 1 0 01-1-1V2a1 1 0 011-1z" fill="#fff" stroke="#c9d8e2" stroke-width="1.4"/><path d="M22 1v8h8" stroke="#c9d8e2" stroke-width="1.4"/><path d="M9 19h16M9 24h16M9 29h10" stroke="#c2cfd9" stroke-width="1.6" stroke-linecap="round"/></svg><span class="ft">PDF</span></span><span class="meta"><b>Provider one-pager</b><span>PDF · <em>Open</em></span></span></a>
       <a class="res" href="https://www.dropbox.com/scl/fi/ej5frvxgbzha8bkzgbyr8/WES-report-DEMO-1.pdf?rlkey=on2907cz1sw4hg7l31t7notqk&st=8klva210&dl=1" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 34 42" fill="none"><path d="M5 1h17l8 8v31a1 1 0 01-1 1H5a1 1 0 01-1-1V2a1 1 0 011-1z" fill="#fff" stroke="#c9d8e2" stroke-width="1.4"/><path d="M22 1v8h8" stroke="#c9d8e2" stroke-width="1.4"/><path d="M9 19h16M9 24h16M9 29h10" stroke="#c2cfd9" stroke-width="1.6" stroke-linecap="round"/></svg><span class="ft">PDF</span></span><span class="meta"><b>Sample WES report</b><span>PDF · <em>Open</em></span></span></a>
     </div>
+  
+    <div class="reslabel">Provider videos</div>
+    <div class="testvideos"><div class="tvgrid">
+      <div class="tvcard"><div class="tvhead"><span class="vdot"></span><b>Whole Exome Sequencing, Explained</b></div><div class="vframe"><iframe src="https://player.vimeo.com/video/1207441045?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Whole Exome Sequencing Explained"></iframe></div></div>
+      <div class="tvcard"><div class="tvhead"><span class="vdot"></span><b>Xenome WES: Benefits for Your Practice</b></div><div class="vframe"><iframe src="https://player.vimeo.com/video/1207441041?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Xenome Whole Exome Sequencing (WES) Benefits for Your Practice"></iframe></div></div>
+      <div class="tvcard"><div class="tvhead"><span class="vdot"></span><b>Read a Xenome WES Report Confidently</b></div><div class="vframe"><iframe src="https://player.vimeo.com/video/1207441043?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Read a Xenome Whole Exome Sequencing Report Confidently"></iframe></div></div>
+    </div></div>
   </article>
 </section>
 </div>
